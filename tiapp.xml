@@ -14,7 +14,7 @@
 	<guid>${guid}</guid>
 	<property name="ti.ui.defaultunit" type="string">dp</property>
 	<property name="run-on-main-thread" type="bool">true</property>
-	 <!-- special property to increase the security of your application by preventing  debugging applications from connecting to your mobile app. -->
+	<!-- special property to increase the security of your application by preventing  debugging applications from connecting to your mobile app. -->
 	<property name="appc-security-debugger-detect">false</property>
 	<!-- special property to increase the security of your application by preventing the mobile app from running on a Jailbroken (iOS) or rooted (Android) device. -->
 	<property name="appc-security-jailbreak-detect">false</property>
@@ -73,8 +73,8 @@
 				<string>Can we use to your health information?</string>
 				<key>NSLocationWhenInUseUsageDescription</key>
 				<string>Can we use your location while using the app?</string>
-				<key>NSLocationAlwaysUsageDescription</key> -->
-				<string>Can we use your location (always)?</string>
+				<!-- <key>NSLocationAlwaysUsageDescription</key> -->
+				<!-- <string>Can we use your location (always)?</string> -->
 				<key>NSMicrophoneUsageDescription</key>
 				<string>Can we use your microphone?</string>
 				<key>NSMotionUsageDescription</key>
@@ -155,7 +155,7 @@
 		</entitlements>
 	</ios>
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
-		<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="19000" >
+		<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="19000">
 			<application android:debuggable="true"
 						 android:icon="@drawable/appicon"
 						 android:label="${name}"

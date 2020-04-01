@@ -1,0 +1,44 @@
+{
+	"name": "${name}",
+	"version": "1.0.0-0",
+	"description": "${description}",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint ./app",		
+		"prebuild": "ti sdk install",	
+		"clean": "rm -rfv build && rm -rfv i18n && rm -rfv platform && rm -rfv Resources",		
+		"build": "npm run build:ios && npm run build:android",
+		"build:ios": "ti build -p ios --build-only --log-level trace --ios-version 13.2.2",
+		"build:android": "ti build -p android --build-only --log-level trace"
+	},
+	"license": "${license}",
+	"dependencies": {
+		"@titanium/bluebird": "3.7.2",
+		"@titanium/polyfill": "0.0.3",
+		"@titanium/errors": "0.0.1"
+		
+	},
+	"devDependencies": {
+		"lodash": ">=4.17.15",
+		"@titanium/eslint-config": ">=0.0.11",
+		"@titanium/plugin-turbo": ">=1.0.4",
+		"@titanium/turbo": "latest",
+		"eslint": "^6.8.0",
+		"titanium": ">=5.2.2"		
+	},
+	"author": {
+		"name": "${author_name}",
+		"email": "${author_email}",
+		"url": "${author_url}"
+	},
+	"repository": {
+		"type": "${repo_type}",
+		"url": "${repo_url}"
+	},
+	"bugs": {
+		"url": "${bugs_url}",
+		"email": "${bugs_email}"
+	},
+	"keywords": ["titanium", "mobile", "alloy", "turbo", "appcelerator", "axway", "amplify"]
+}

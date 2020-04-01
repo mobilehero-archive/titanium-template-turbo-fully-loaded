@@ -1,0 +1,40 @@
+{
+	"name": "@titanium/template-turbo-next",
+	"version": "0.0.19",
+	"description": "Titanium Native Mobile Template - Turbo Next -- Testing features for the next version of Titanium Turbo template",
+	"main": "index.js",
+	"scripts": {
+		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"test": "npm install --ignore-scripts && npm run list"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/brentonhouse/titanium-template-turbo-next.git"
+	},
+	"bugs": {
+		"url": "https://github.com/brentonhouse/titanium-template-turbo-next/issues",
+		"email": "brenton.house@gmail.com"
+	},
+	"author": {
+		"name": "Brenton House",
+		"email": "brenton.house@gmail.com",
+		"url": "https://github.com/brentonhouse"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@titanium/eslint-config": "0.0.11",
+		"eslint": "^6.8.0"
+	},
+	"dependencies": {},
+	"keywords": [
+		"titanium",
+		"mobile",
+		"alloy",
+		"turbo",
+		"appcelerator",
+		"axway",
+		"amplify",
+		"brenton-house",
+		"template"
+	]
+}

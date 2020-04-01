@@ -1,0 +1,8 @@
+# ${name}
+
+> ${description}
+
+${copyright}
+
+
+

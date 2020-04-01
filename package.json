@@ -1,7 +1,7 @@
 {
-	"name": "@titanium/template-turbo-next",
-	"version": "0.0.19",
-	"description": "Titanium Native Mobile Template - Turbo Next -- Testing features for the next version of Titanium Turbo template",
+	"name": "@titanium/template-turbo-fully-loaded",
+	"version": "0.0.1",
+	"description": "Titanium Native Mobile Template - Turbo (Fully Loaded) -- TTitanium Turbo template with all the bells and whistles",
 	"main": "index.js",
 	"scripts": {
 		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
@@ -9,10 +9,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/brentonhouse/titanium-template-turbo-next.git"
+		"url": "git://github.com/brentonhouse/titanium-template-turbo-fully-loaded.git"
 	},
 	"bugs": {
-		"url": "https://github.com/brentonhouse/titanium-template-turbo-next/issues",
+		"url": "https://github.com/brentonhouse/titanium-template-turbo-fully-loaded/issues",
 		"email": "brenton.house@gmail.com"
 	},
 	"author": {

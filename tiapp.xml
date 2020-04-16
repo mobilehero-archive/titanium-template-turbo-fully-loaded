@@ -129,10 +129,18 @@
 							<!-- your custom scheme -->
 							<string>${id}</string>
 							<!-- same as 'fb' plus ti:app/property[name=ti.facebook.appid] -->
-							<!--<string>fb123456789</string>-->
+							<string>fb123456789</string>
+							<string>com.googleusercontent.apps.123456789-xxxxxx</string>
 						</array>
+						<key>CFBundleTypeRole</key>
+						<string>Editor</string>
 					</dict>
 				</array>
+				<!-- facebook settings -->
+				<key>FacebookAppID</key>
+				<string>123456789</string>
+				<key>FacebookDisplayName</key>
+				<string>${name}</string>
 			</dict>
 		</plist>
 		<entitlements>

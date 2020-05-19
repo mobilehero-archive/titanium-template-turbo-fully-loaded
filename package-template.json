@@ -14,19 +14,19 @@
 	},
 	"license": "${license}",
 	"dependencies": {
-		"@titanium/bluebird": "3.7.2",
-		"@titanium/polyfill": "0.0.3",
-		"@titanium/errors": "0.0.1",
+		"@titanium/bluebird": ">=3.7.2",
+		"@titanium/polyfill": ">=0.0.5",
+		"@titanium/errors": ">=0.0.2",
 		"@titanium/screenshot": "latest",
 		"@titanium/applesignin": "latest",
 		"@titanium/googlesignin": "latest",
-		"@titanium/facebook": "^1.0.10",
-		"@titanium/lottie": "^1.0.17",
-		"@titanium/permissions": "latest",
+		"@titanium/facebook": ">=1.0.10",
+		"@titanium/lottie": ">=1.0.17",
+		"@titanium/permissions": ">=0.0.6",
 		"@titanium/webdialog": "^1.0.13",
-		"@titanium/identity": "^1.1.0",
-		"@titanium/please": "latest",
-		"@titanium/streams": "0.0.3",
+		"@titanium/identity": ">=1.1.0",
+		"@titanium/please": ">=0.0.10",
+		"@titanium/streams": ">=0.0.3",
 		"fast-json-patch": "^3.0.0-1",
 		"semver": "^7.3.2"
 		
@@ -36,7 +36,7 @@
 		"@titanium/eslint-config": ">=0.0.11",
 		"@titanium/plugin-turbo": ">=1.0.4",
 		"@titanium/turbo": "latest",
-		"eslint": "^6.8.0",
+		"eslint": "^7.0.0",
 		"titanium": ">=5.2.2"		
 	},
 	"author": {

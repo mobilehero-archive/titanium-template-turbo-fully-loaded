@@ -183,7 +183,7 @@
 						  android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
 				<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
 				<provider android:name="com.facebook.FacebookContentProvider"
-						  android:authorities="com.facebook.app.FacebookContentProvider<YOUR_APP_ID>"
+						  android:authorities="com.facebook.app.FacebookContentProvider{YOUR_APP_ID}"
 						  android:exported="true" />
 			</application>
 			<uses-permission android:name="android.permission.VIBRATE" />

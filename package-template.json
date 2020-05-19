@@ -15,7 +15,7 @@
 	"license": "${license}",
 	"dependencies": {
 		"@titanium/bluebird": ">=3.7.2",
-		"@titanium/polyfill": ">=0.0.5",
+		"@titanium/polyfill": ">=0.0.6",
 		"@titanium/errors": ">=0.0.2",
 		"@titanium/screenshot": "latest",
 		"@titanium/applesignin": "latest",

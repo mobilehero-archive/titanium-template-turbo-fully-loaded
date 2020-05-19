@@ -2,7 +2,7 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
 	<id>${id}</id>
 	<name>${name}</name>
-	<version>0.0.4.0</version>
+	<version>1.0.0.0</version>
 	<publisher>${publisher}</publisher>
 	<url>${url}</url>
 	<description>${description}</description>

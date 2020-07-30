@@ -1,7 +1,7 @@
 {
 	"name": "@titanium/template-turbo-fully-loaded",
-	"version": "0.0.4",
-	"description": "Titanium Native Mobile Template - Turbo (Fully Loaded) -- TTitanium Turbo template with all the bells and whistles",
+	"version": "0.0.5",
+	"description": "Titanium Native Mobile Template - Turbo (Fully Loaded) -- Titanium Turbo template with all the bells and whistles",
 	"main": "index.js",
 	"scripts": {
 		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
@@ -22,8 +22,8 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"@titanium/eslint-config": "0.0.11",
-		"eslint": "^7.0.0"
+		"@titanium/eslint-config": "0.0.14",
+		"eslint": "^7.5.0"
 	},
 	"dependencies": {},
 	"keywords": [

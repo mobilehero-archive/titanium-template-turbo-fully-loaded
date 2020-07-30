@@ -2,7 +2,7 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
 	<id>${id}</id>
 	<name>${name}</name>
-	<version>1.0.0.0</version>
+	<version>1.0.0</version>
 	<publisher>${publisher}</publisher>
 	<url>${url}</url>
 	<description>${description}</description>
@@ -37,9 +37,9 @@
 		<plist>
 			<dict>
 				<key>CFBundleVersion</key>
-				<string>0.0.4.0</string>
+				<string>1.0.0.0</string>
 				<key>CFBundleShortVersionString</key>
-				<string>0.0.4</string>
+				<string>1.0.0</string>
 				<key>UISupportedInterfaceOrientations~iphone</key>
 				<array>
 					<string>UIInterfaceOrientationPortrait</string>
@@ -198,7 +198,7 @@
 		<target device="ipad">true</target>
 		<target device="iphone">true</target>
 	</deployment-targets>
-	<sdk-version>9.0.2.GA</sdk-version>
+	<sdk-version>9.0.3.GA</sdk-version>
 	<plugins>
 		<plugin version="1.0">ti.alloy</plugin>
 		<plugin version="1.0">turbo</plugin>

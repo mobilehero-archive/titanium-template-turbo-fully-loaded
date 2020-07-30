@@ -20,9 +20,9 @@ npx @geek/mobile app:create my-new-app @titanium/template-turbo-fully-loaded
 ```
 
 
-## Current Features
+## ✨ Features
 
-* Titanium SDK 9.0.0.GA
+* Titanium SDK 9.0.3.GA
 * Updated .gitignore file
 * Modifications to `tiapp.xml`:
   * Added the following iOS permissions:
@@ -42,14 +42,21 @@ npx @geek/mobile app:create my-new-app @titanium/template-turbo-fully-loaded
 
   * More updates
 
-## Other Projects
+## 🔗 Related Links
 
-* [Titanium Turbo](https://www.npmjs.com/package/@titanium/turbo) - Variation of **`Titanium Alloy`** that adds some enhancements and customizations for rapid development.
-* [Geek Mobile Toolkit](https://www.npmjs.com/package/@geek/mobile) - Toolkit for creating, building, and managing mobile app projects.
-* [Titanium Turbo Template (Default)](https://www.npmjs.com/package/@titanium/template-turbo-default) - Template for default Turbo app.  Based on the basic Alloy Template + some extra goodies.
-* [Titanium Turbo Template (Next)](https://www.npmjs.com/package/@titanium/template-turbo-next) - Template for cutting-edge Turbo app.  Based on the basic Turbo Template + even more extra goodies.
-* [Titanium Alloy Template (Basic)](https://www.npmjs.com/package/@titanium/template-alloy-basic) - Basic Alloy app.  What you get when creating new app project with Titanium CLI.
-* [Titanium Alloy Template (Default)](https://www.npmjs.com/package/@titanium/template-alloy-default) - Default Alloy app.  Based on the Basic Alloy Template + some extra goodies.
+⭐  [Titanium Turbo](https://www.npmjs.com/package/@titanium/turbo) - Variation of **`Titanium Alloy`** that adds some enhancements and customizations for rapid development.
+⭐  [Geek Mobile Toolkit](https://www.npmjs.com/package/@geek/mobile) - Toolkit for creating, building, and managing mobile app projects.   
+⭐  [Titanium Turbo Template (Default)](https://www.npmjs.com/package/@titanium/template-turbo-default) - Template for default Turbo app.  Based on the basic Alloy Template + some extra goodies.   
+⭐  [Titanium Turbo Template (Next)](https://www.npmjs.com/package/@titanium/template-turbo-next) - Template for Turbo app (with extras).  Based on the default Turbo Template + some extras.   
+⭐  [Titanium Turbo Template (Fully Loaded)](https://www.npmjs.com/package/@titanium/template-turbo-fully-loaded) - Template for Turbo app (with all the bells and whistles).  Based on the Turbo Template (Next) + some extras.   
+⭐  [Titanium Alloy Template (Basic)](https://www.npmjs.com/package/@titanium/template-alloy-basic) - Basic Alloy app.  What you get when creating new app project with Titanium CLI.
+⭐  [Titanium Mobile](https://www.npmjs.com/package/titanium) - Open-source tool for building powerful, cross-platform native apps with JavaScript.   
+⭐  [Alloy](https://www.npmjs.com/package/alloy) - MVC framework built on top of Titanium Mobile.   
+⭐  [Appcelerator](https://www.npmjs.com/package/appcelerator) - Installer for the Appcelerator Platform tool   
+
+## 📣 Feedback
+
+Have an idea or a comment?  [Join in the conversation here](https://github.com/brentonhouse/titanium-template-turbo-fully-loaded/issues)! 
 
 
 > _Turbo is not an official Axway product.  It is an open-source project that is supported exclusively by the Titanium development community._

@@ -5,9 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint ./app",		
+		"lint": "eslint ./app --fix",		
 		"prebuild": "ti sdk install",	
-		"clean": "rm -rfv build && rm -rfv i18n && rm -rfv platform && rm -rfv Resources",		
+		"clean": "rm -rfv build && rm -rfv i18n && rm -rfv platform && rm -rfv Resources",	
 		"build": "npm run build:ios && npm run build:android",
 		"build:ios": "ti build -p ios --build-only --log-level trace --ios-version 13.2.2",
 		"build:android": "ti build -p android --build-only --log-level trace"

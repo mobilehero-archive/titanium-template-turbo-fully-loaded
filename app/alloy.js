@@ -61,7 +61,7 @@
 	Logger.defaultLogger = defaultLogger;
 
 	const logger = Logger.createLogger('app:alloy', { meta: { filename: __filename } });
-
+	logger.track('logger configured.');
 
 	// enable all namespaces
 	// Logger.filter('**');

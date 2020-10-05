@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/template-turbo-fully-loaded",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Titanium Native Mobile Template - Turbo (Fully Loaded) -- Titanium Turbo template with all the bells and whistles",
 	"main": "index.js",
 	"scripts": {

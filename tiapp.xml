@@ -26,7 +26,7 @@
 	<!-- Allow or disallow custom iOS 8+ keyboard extensions. By default, custom keyboard extensions are allowed. Add this property and set it to false to disallow custom keyboard extensions. -->
 	<property name="allow-custom-keyboards" type="bool">true</property>
 	<ios>
-		<min-ios-ver>11.0</min-ios-ver>
+		<min-ios-ver>12.0</min-ios-ver>
 		<enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
 		<use-app-thinning>true</use-app-thinning>
 		<use-jscore-framework>true</use-jscore-framework>
@@ -198,7 +198,7 @@
 		<target device="ipad">true</target>
 		<target device="iphone">true</target>
 	</deployment-targets>
-	<sdk-version>9.0.3.GA</sdk-version>
+	<sdk-version>9.2.0.GA</sdk-version>
 	<plugins>
 		<plugin version="1.0">ti.alloy</plugin>
 		<plugin version="1.0">turbo</plugin>

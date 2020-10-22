@@ -32,7 +32,7 @@
     "lint": "eslint . --fix",
     "list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "prep": "npm install --ignore-scripts && npm run list",
-    "prepublish": "bump release --no-tiapp",
+    "prepublish": "bump release --tiapp false",
     "test": "npm run prep"
   },
   "dependencies": {},

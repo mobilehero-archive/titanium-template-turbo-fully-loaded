@@ -38,9 +38,9 @@
     <plist>
       <dict>
         <key>CFBundleVersion</key>
-        <string>0.0.11</string>
+        <string>1.0.0</string>
         <key>CFBundleShortVersionString</key>
-        <string>0.0.11</string>
+        <string>1.0.0</string>
         <key>UISupportedInterfaceOrientations~iphone</key>
         <array>
           <string>UIInterfaceOrientationPortrait</string>

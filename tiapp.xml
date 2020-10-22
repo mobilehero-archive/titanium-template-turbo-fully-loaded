@@ -1,206 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ti:app xmlns:ti="http://ti.appcelerator.org">
-	<id>${id}</id>
-	<name>${name}</name>
-	<version>0.0.11</version>
-	<publisher>${publisher}</publisher>
-	<url>${url}</url>
-	<description>${description}</description>
-	<copyright>${copyright}</copyright>
-	<icon>appicon.png</icon>
-	<fullscreen>false</fullscreen>
-	<navbar-hidden>false</navbar-hidden>
-	<analytics>false</analytics>
-	<!-- <guid>00000000-0000-0000-0000-000000000000</guid> -->
-	<guid>${guid}</guid>
-	<property name="ti.ui.defaultunit" type="string">dp</property>
-	<property name="run-on-main-thread" type="bool">true</property>
-	<!-- For use with Google Sign-in -->
-	<property name="google-clientid" type="string">123456789-xxxxxxxxxxxxxx.apps.googleusercontent.com</property>
-	<!-- special property to increase the security of your application by preventing  debugging applications from connecting to your mobile app. -->
-	<property name="appc-security-debugger-detect">false</property>
-	<!-- special property to increase the security of your application by preventing the mobile app from running on a Jailbroken (iOS) or rooted (Android) device. -->
-	<property name="appc-security-jailbreak-detect">false</property>
-	<!-- special property appc-sourcecode-encryption-policy determines the encryption policy for assets.  values can be remote (default) or embed -->
-	<property name="appc-sourcecode-encryption-policy">remote</property>
-	<!-- Allow or disallow custom iOS 8+ keyboard extensions. By default, custom keyboard extensions are allowed. Add this property and set it to false to disallow custom keyboard extensions. -->
-	<property name="allow-custom-keyboards" type="bool">true</property>
-	<ios>
-		<min-ios-ver>12.0</min-ios-ver>
-		<enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
-		<use-app-thinning>true</use-app-thinning>
-		<use-jscore-framework>true</use-jscore-framework>
-		<!-- Set backgroundColor for builtin storyboard and/or root view controller -->
-		<default-background-color>#ffffff</default-background-color>
-		<!-- Enable to support iPad Split View and Slide Over -->
-		<use-autolayout>false</use-autolayout>
-		<plist>
-			<dict>
-				<key>CFBundleVersion</key>
-				<string>0.0.11</string>
-				<key>CFBundleShortVersionString</key>
-				<string>0.0.11</string>
-				<key>UISupportedInterfaceOrientations~iphone</key>
-				<array>
-					<string>UIInterfaceOrientationPortrait</string>
-					<!-- <string>UIInterfaceOrientationPortraitUpsideDown</string> -->
-					<!-- <string>UIInterfaceOrientationLandscapeLeft</string> -->
-					<!-- <string>UIInterfaceOrientationLandscapeRight</string> -->
-				</array>
-				<key>UISupportedInterfaceOrientations~ipad</key>
-				<array>
-					<string>UIInterfaceOrientationPortrait</string>
-					<!-- <string>UIInterfaceOrientationPortraitUpsideDown</string> -->
-					<!-- <string>UIInterfaceOrientationLandscapeLeft</string> -->
-					<!-- <string>UIInterfaceOrientationLandscapeRight</string> -->
-				</array>
-				<!-- Dark Mode: Automatic, Light, or Dark -->
-				<key>UIUserInterfaceStyle</key>
-				<string>Automatic</string>
-				<!-- Update status bar based on style preference -->
-				<key>UIViewControllerBasedStatusBarAppearance</key>
-				<true />
-				<key>ITSAppUsesNonExemptEncryption</key>
-				<false />
-				<key>NSAppleMusicUsageDescription</key>
-				<string>Can we use your music library?</string>
-				<key>NSBluetoothPeripheralUsageDescription</key>
-				<string>Can we use your bluetooth?</string>
-				<key>NSCalendarsUsageDescription</key>
-				<string>Can we use your calendar?</string>
-				<key>NSCameraUsageDescription</key>
-				<string>Can we use your camera?</string>
-				<key>NSContactsUsageDescription</key>
-				<string>Can we use to your contacts?</string>
-				<key>NSFaceIDUsageDescription</key>
-				<string>Can we use FaceID to authenticate you?</string>
-				<key>NSHealthShareUsageDescription</key>
-				<string>Can we use to your health information?</string>
-				<key>NSHealthUpdateUsageDescription</key>
-				<string>Can we use to your health information?</string>
-				<key>NSLocationWhenInUseUsageDescription</key>
-				<string>Can we use your location while using the app?</string>
-				<!-- <key>NSLocationAlwaysUsageDescription</key> -->
-				<!-- <string>Can we use your location (always)?</string> -->
-				<key>NSMicrophoneUsageDescription</key>
-				<string>Can we use your microphone?</string>
-				<key>NSMotionUsageDescription</key>
-				<string>Can we use your motion tracking hardware?</string>
-				<key>NSPhotoLibraryAddUsageDescription</key>
-				<string>Can we save to your photo library?</string>
-				<key>NSPhotoLibraryUsageDescription</key>
-				<string>Can we access your photo library?</string>
-				<key>NSRemindersUsageDescription</key>
-				<string>Can we have access to your reminders?</string>
-				<key>NSSpeechRecognitionUsageDescription</key>
-				<string>Can we have access to speech recognition?</string>
-				<key>ITSAppUsesNonExemptEncryption</key>
-				<false />
-				<key>UIRequiresPersistentWiFi</key>
-				<false />
-				<key>UIPrerenderedIcon</key>
-				<false />
-				<key>UIStatusBarHidden</key>
-				<false />
-				<key>UIStatusBarStyle</key>
-				<string>UIStatusBarStyleDefault</string>
-				<!-- Used for Silent Pushes and Remote Push Notifications -->
-				<!-- Note: The aps-development (development / production) is injected by the CLI based on your deploy type :-) -->
-				<key>UIBackgroundModes</key>
-				<array>
-					<!-- Without this one, you are not allowed to perform tasks in the "silentpush" event -->
-					<string>fetch</string>
-					<!-- Without this one, you cannot receive a device token -->
-					<string>remote-notification</string>
-				</array>
-				<key>LSApplicationQueriesSchemes</key>
-				<array>
-					<string>fb</string>
-					<string>fbapi</string>
-					<string>fbauth</string>
-					<string>fbauth2</string>
-					<string>fbshareextension</string>
-					<string>fb-messenger-api</string>
-					<string>twitter</string>
-					<string>instagram</string>
-					<string>comgooglemaps</string>
-					<string>${id}</string>
-				</array>
-				<key>CFBundleURLTypes</key>
-				<array>
-					<dict>
-						<key>CFBundleURLName</key>
-						<!-- same as ti:app/id -->
-						<string>${id}</string>
-						<key>CFBundleURLSchemes</key>
-						<array>
-							<!-- your custom scheme -->
-							<string>${id}</string>
-							<!-- same as 'fb' plus ti:app/property[name=ti.facebook.appid] -->
-							<string>fb123456789</string>
-							<string>com.googleusercontent.apps.123456789-xxxxxx</string>
-						</array>
-						<key>CFBundleTypeRole</key>
-						<string>Editor</string>
-					</dict>
-				</array>
-				<!-- facebook settings -->
-				<key>FacebookAppID</key>
-				<string>123456789</string>
-				<key>FacebookDisplayName</key>
-				<string>${name}</string>
-			</dict>
-		</plist>
-		<entitlements>
-			<dict>
-				<!-- Make sure that your Apple App ID and Provisioning Profile 
+<ti:app 
+  xmlns:ti="http://ti.appcelerator.org">
+  <id>${id}</id>
+  <name>${name}</name>
+  <version>1.0.0</version>
+  <publisher>${publisher}</publisher>
+  <url>${url}</url>
+  <description>${description}</description>
+  <copyright>${copyright}</copyright>
+  <icon>appicon.png</icon>
+  <fullscreen>false</fullscreen>
+  <navbar-hidden>false</navbar-hidden>
+  <analytics>false</analytics>
+  <!-- <guid>00000000-0000-0000-0000-000000000000</guid> -->
+  <guid>${guid}</guid>
+  <property name="ti.ui.defaultunit" type="string">dp</property>
+  <property name="run-on-main-thread" type="bool">true</property>
+  <!-- For use with Google Sign-in -->
+  <property name="google-clientid" type="string">123456789-xxxxxxxxxxxxxx.apps.googleusercontent.com</property>
+  <!-- special property to increase the security of your application by preventing  debugging applications from connecting to your mobile app. -->
+  <property name="appc-security-debugger-detect">false</property>
+  <!-- special property to increase the security of your application by preventing the mobile app from running on a Jailbroken (iOS) or rooted (Android) device. -->
+  <property name="appc-security-jailbreak-detect">false</property>
+  <!-- special property appc-sourcecode-encryption-policy determines the encryption policy for assets.  values can be remote (default) or embed -->
+  <property name="appc-sourcecode-encryption-policy">remote</property>
+  <!-- Allow or disallow custom iOS 8+ keyboard extensions. By default, custom keyboard extensions are allowed. Add this property and set it to false to disallow custom keyboard extensions. -->
+  <property name="allow-custom-keyboards" type="bool">true</property>
+  <ios>
+    <min-ios-ver>12.0</min-ios-ver>
+    <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+    <use-app-thinning>true</use-app-thinning>
+    <use-jscore-framework>true</use-jscore-framework>
+    <!-- Set backgroundColor for builtin storyboard and/or root view controller -->
+    <default-background-color>#ffffff</default-background-color>
+    <!-- Enable to support iPad Split View and Slide Over -->
+    <use-autolayout>false</use-autolayout>
+    <plist>
+      <dict>
+        <key>CFBundleVersion</key>
+        <string>0.0.11</string>
+        <key>CFBundleShortVersionString</key>
+        <string>0.0.11</string>
+        <key>UISupportedInterfaceOrientations~iphone</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+          <!-- <string>UIInterfaceOrientationPortraitUpsideDown</string> -->
+          <!-- <string>UIInterfaceOrientationLandscapeLeft</string> -->
+          <!-- <string>UIInterfaceOrientationLandscapeRight</string> -->
+        </array>
+        <key>UISupportedInterfaceOrientations~ipad</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+          <!-- <string>UIInterfaceOrientationPortraitUpsideDown</string> -->
+          <!-- <string>UIInterfaceOrientationLandscapeLeft</string> -->
+          <!-- <string>UIInterfaceOrientationLandscapeRight</string> -->
+        </array>
+        <!-- Dark Mode: Automatic, Light, or Dark -->
+        <key>UIUserInterfaceStyle</key>
+        <string>Automatic</string>
+        <!-- Update status bar based on style preference -->
+        <key>UIViewControllerBasedStatusBarAppearance</key>
+        <true/>
+        <key>ITSAppUsesNonExemptEncryption</key>
+        <false/>
+        <key>NSAppleMusicUsageDescription</key>
+        <string>Can we use your music library?</string>
+        <key>NSBluetoothPeripheralUsageDescription</key>
+        <string>Can we use your bluetooth?</string>
+        <key>NSCalendarsUsageDescription</key>
+        <string>Can we use your calendar?</string>
+        <key>NSCameraUsageDescription</key>
+        <string>Can we use your camera?</string>
+        <key>NSContactsUsageDescription</key>
+        <string>Can we use to your contacts?</string>
+        <key>NSFaceIDUsageDescription</key>
+        <string>Can we use FaceID to authenticate you?</string>
+        <key>NSHealthShareUsageDescription</key>
+        <string>Can we use to your health information?</string>
+        <key>NSHealthUpdateUsageDescription</key>
+        <string>Can we use to your health information?</string>
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <string>Can we use your location while using the app?</string>
+        <!-- <key>NSLocationAlwaysUsageDescription</key> -->
+        <!-- <string>Can we use your location (always)?</string> -->
+        <key>NSMicrophoneUsageDescription</key>
+        <string>Can we use your microphone?</string>
+        <key>NSMotionUsageDescription</key>
+        <string>Can we use your motion tracking hardware?</string>
+        <key>NSPhotoLibraryAddUsageDescription</key>
+        <string>Can we save to your photo library?</string>
+        <key>NSPhotoLibraryUsageDescription</key>
+        <string>Can we access your photo library?</string>
+        <key>NSRemindersUsageDescription</key>
+        <string>Can we have access to your reminders?</string>
+        <key>NSSpeechRecognitionUsageDescription</key>
+        <string>Can we have access to speech recognition?</string>
+        <key>ITSAppUsesNonExemptEncryption</key>
+        <false/>
+        <key>UIRequiresPersistentWiFi</key>
+        <false/>
+        <key>UIPrerenderedIcon</key>
+        <false/>
+        <key>UIStatusBarHidden</key>
+        <false/>
+        <key>UIStatusBarStyle</key>
+        <string>UIStatusBarStyleDefault</string>
+        <!-- Used for Silent Pushes and Remote Push Notifications -->
+        <!-- Note: The aps-development (development / production) is injected by the CLI based on your deploy type :-) -->
+        <key>UIBackgroundModes</key>
+        <array>
+          <!-- Without this one, you are not allowed to perform tasks in the "silentpush" event -->
+          <string>fetch</string>
+          <!-- Without this one, you cannot receive a device token -->
+          <string>remote-notification</string>
+        </array>
+        <key>LSApplicationQueriesSchemes</key>
+        <array>
+          <string>fb</string>
+          <string>fbapi</string>
+          <string>fbauth</string>
+          <string>fbauth2</string>
+          <string>fbshareextension</string>
+          <string>fb-messenger-api</string>
+          <string>twitter</string>
+          <string>instagram</string>
+          <string>comgooglemaps</string>
+          <string>${id}</string>
+        </array>
+        <key>CFBundleURLTypes</key>
+        <array>
+          <dict>
+            <key>CFBundleURLName</key>
+            <!-- same as ti:app/id -->
+            <string>${id}</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+              <!-- your custom scheme -->
+              <string>${id}</string>
+              <!-- same as 'fb' plus ti:app/property[name=ti.facebook.appid] -->
+              <string>fb123456789</string>
+              <string>com.googleusercontent.apps.123456789-xxxxxx</string>
+            </array>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+          </dict>
+        </array>
+        <!-- facebook settings -->
+        <key>FacebookAppID</key>
+        <string>123456789</string>
+        <key>FacebookDisplayName</key>
+        <string>${name}</string>
+      </dict>
+    </plist>
+    <entitlements>
+      <dict>
+        <!-- Make sure that your Apple App ID and Provisioning Profile 
 				are setup on https://developer.apple.com -->
-				<key>com.apple.developer.applesignin</key>
-				<array>
-					<string>Default</string>
-				</array>
-				<!-- <key>com.apple.developer.associated-domains</key>
-				<array>
-					<string>applinks:my-domain-name.com</string>
-				</array> -->
-				<!-- <key>keychain-access-groups</key>
-				<array>
-					<string>$(AppIdentifierPrefix).${id}</string>
-				</array>				 -->
-			</dict>
-		</entitlements>
-	</ios>
-	<android xmlns:android="http://schemas.android.com/apk/res/android">
-		<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="11000">
-			<application android:debuggable="true"
-						 android:icon="@drawable/appicon"
-						 android:label="${name}"
-						 android:largeHeap="true"
-						 android:screenOrientation="portrait"
-						 android:theme="@style/turbo_theme">
-				<activity android:name="com.facebook.FacebookActivity"
-						  android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="${name}"
-						  android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
-				<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
-				<provider android:name="com.facebook.FacebookContentProvider"
-						  android:authorities="com.facebook.app.FacebookContentProvider{YOUR_APP_ID}"
-						  android:exported="true" />
-			</application>
-			<uses-permission android:name="android.permission.VIBRATE" />
-			<uses-permission android:name="android.permission.CAMERA" />
-			<uses-feature android:name="android.hardware.camera" />
-			<uses-permission android:name="android.permission.RECORD_AUDIO" />
-		</manifest>
-	</android>
-	<modules></modules>
-	<deployment-targets>
-		<target device="android">true</target>
-		<target device="ipad">true</target>
-		<target device="iphone">true</target>
-	</deployment-targets>
-	<sdk-version>9.2.0.GA</sdk-version>
-	<plugins>
-		<plugin version="1.0">ti.alloy</plugin>
-		<plugin version="1.0">turbo</plugin>
-	</plugins>
+        <key>com.apple.developer.applesignin</key>
+        <array>
+          <string>Default</string>
+        </array>
+        <!-- <key>com.apple.developer.associated-domains</key><array><string>applinks:my-domain-name.com</string></array> -->
+        <!-- <key>keychain-access-groups</key><array><string>$(AppIdentifierPrefix).${id}</string></array>				 -->
+      </dict>
+    </entitlements>
+  </ios>
+  <android 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <manifest 
+      xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="11000">
+      <application android:debuggable="true" android:icon="@drawable/appicon" android:label="${name}" android:largeHeap="true" android:screenOrientation="portrait" android:theme="@style/turbo_theme">
+        <activity android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="${name}" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <provider android:name="com.facebook.FacebookContentProvider" android:authorities="com.facebook.app.FacebookContentProvider{YOUR_APP_ID}" android:exported="true"/>
+      </application>
+      <uses-permission android:name="android.permission.VIBRATE"/>
+      <uses-permission android:name="android.permission.CAMERA"/>
+      <uses-feature android:name="android.hardware.camera"/>
+      <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    </manifest>
+  </android>
+  <modules>
+    <module platform="android" version="1.1.0">ti.deeply</module>
+    <module platform="ios" version="7.0.0">facebook</module>
+    <module platform="android" version="8.0.0">facebook</module>
+    <module platform="ios" version="3.0.0">ti.googlesignin</module>
+    <module platform="ios" version="1.1.0">ti.identity</module>
+    <module platform="android" version="2.2.0">ti.identity</module>
+    <module platform="ios" version="2.0.0">ti.animation</module>
+    <module platform="android" version="4.0.0">ti.animation</module>
+    <module platform="ios" version="1.0.0">de.marcelpociot.screenshot</module>
+    <module platform="ios" version="2.0.0">ti.webdialog</module>
+    <module platform="android" version="2.0.0">ti.webdialog</module>
+  </modules>
+  <deployment-targets>
+    <target device="android">true</target>
+    <target device="ipad">true</target>
+    <target device="iphone">true</target>
+  </deployment-targets>
+  <sdk-version>9.2.1.GA</sdk-version>
+  <plugins>
+    <plugin version="1.0">ti.alloy</plugin>
+    <plugin version="1.0">turbo</plugin>
+  </plugins>
 </ti:app>

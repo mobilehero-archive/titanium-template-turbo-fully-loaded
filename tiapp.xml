@@ -61,6 +61,10 @@
 				<!-- Update status bar based on style preference -->
 				<key>UIViewControllerBasedStatusBarAppearance</key>
 				<true />
+				<key>UIStatusBarHidden</key>
+				<false />
+				<key>UIStatusBarStyle</key>
+				<string>UIStatusBarStyleDefault</string>				
 				<key>ITSAppUsesNonExemptEncryption</key>
 				<false />
 				<key>NSAppleMusicUsageDescription</key>
@@ -95,16 +99,10 @@
 				<string>Can we have access to your reminders?</string>
 				<key>NSSpeechRecognitionUsageDescription</key>
 				<string>Can we have access to speech recognition?</string>
-				<key>ITSAppUsesNonExemptEncryption</key>
-				<false />
 				<key>UIRequiresPersistentWiFi</key>
 				<false />
 				<key>UIPrerenderedIcon</key>
 				<false />
-				<key>UIStatusBarHidden</key>
-				<false />
-				<key>UIStatusBarStyle</key>
-				<string>UIStatusBarStyleDefault</string>
 				<!-- Used for Silent Pushes and Remote Push Notifications -->
 				<!-- Note: The aps-development (development / production) is injected by the CLI based on your deploy type :-) -->
 				<key>UIBackgroundModes</key>

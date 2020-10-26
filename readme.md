@@ -140,7 +140,7 @@ Have an idea or a comment?  [Join in the conversation here](https://github.com/b
 
 Template Code is licensed under MIT
 
-Alloy is developed by Appcelerator and the community and is Copyright © 2012-present by Axway, Inc. All Rights Reserved.
+Alloy is developed by Appcelerator and the community and is Copyright (c) 2012-present by Axway, Inc. All Rights Reserved.
 
 Alloy is made available under the Apache Public License, version 2. See their license file for more information.
 

@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/template-turbo-fully-loaded",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "Titanium Native Mobile Template - Turbo (Fully Loaded) -- Titanium Turbo template with all the bells and whistles",
 	"keywords": [
 		"titanium",
@@ -76,7 +76,7 @@
 		"@titanium/eslint-config": "0.0.18",
 		"@titanium/module-copier": "0.0.28",
 		"@titanium/plugin-turbo": ">=1.0.6",
-		"@titanium/turbo": "^2.0.14",
+		"@titanium/turbo": "^2.0.15",
 		"bluebird": "^3.7.2",
 		"eslint": "^7.12.0",
 		"eslint-plugin-import": "^2.22.1",

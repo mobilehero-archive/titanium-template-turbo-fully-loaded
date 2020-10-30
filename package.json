@@ -1,89 +1,87 @@
 {
-	"name": "@titanium/template-turbo-fully-loaded",
-	"version": "1.0.9",
-	"description": "Titanium Native Mobile Template - Turbo (Fully Loaded) -- Titanium Turbo template with all the bells and whistles",
-	"keywords": [
-		"titanium",
-		"mobile",
-		"alloy",
-		"turbo",
-		"appcelerator",
-		"axway",
-		"amplify",
-		"brenton-house",
-		"template"
-	],
-	"bugs": {
-		"url": "https://github.com/brentonhouse/titanium-template-turbo-fully-loaded/issues",
-		"email": "brenton.house@gmail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/brentonhouse/titanium-template-turbo-fully-loaded.git"
-	},
-	"license": "MIT",
-	"author": {
-		"name": "Brenton House",
-		"email": "brenton.house@gmail.com",
-		"url": "https://github.com/brentonhouse"
-	},
-	"main": "index.js",
-	"scripts": {
-		"lint": "eslint . --fix",
-		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"prep": "npm install --ignore-scripts && npm run list",
-		"prepublish": "bump release --tiapp false",
-		"test": "npm run prep"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"@titanium/eslint-config": "0.0.18",
-		"bluebird": "^3.7.2",
-		"eslint": "^7.12.0",
-		"eslint-plugin-import": "^2.22.1",
-		"eslint-plugin-jsdoc": "^30.7.3",
-		"eslint-plugin-promise": "^4.2.1",
-		"fs-extra": "^9.0.1",
-		"lodash": "^4.17.20"
-	},
-	"titaniumDependencies": {
-		"@geek/cache": "^1.0.2",
-		"@geek/jwt": "^1.0.1",
-		"@titanium/plugin-turbo": ">=1.0.6",
-		"@titanium/turbo": "^2.1.6",
-		"@geek/retry": "^1.0.0",
-		"@mobile/tinycolor2": "^1.4.1-2",
-		"@titanium/authentication": "^1.0.1",
-		"@titanium/authentication-oauth": "^1.0.13",
-		"@titanium/bluebird": "^3.7.3",
-		"@titanium/calendar-picker": "1.0.0",
-		"@titanium/deeply": "^1.0.4",
-		"@titanium/facebook": ">=1.0.10",
-		"@titanium/googlesignin": "^0.0.1",
-		"@titanium/identity": ">=1.1.2",
-		"@titanium/lottie": "^1.0.24",
-		"@titanium/observer": "0.0.3",
-		"@titanium/permissions": ">=1.0.2",
-		"@titanium/please": "^1.0.11",
-		"@titanium/screenshot": "^1.0.1",
-		"@titanium/updater": "^1.0.1",
-		"@titanium/webdialog": "^2.1.3",
-		"ansi-colors": "^4.1.1"
-	},
-	"titaniumDevDependencies": {
-		"@titanium/eslint-config": "0.0.18",
-		"@titanium/plugin-turbo": ">=1.0.6",
-		"@titanium/turbo": "^2.0.15",
-		"bluebird": "^3.7.2",
-		"eslint": "^7.12.0",
-		"eslint-plugin-import": "^2.22.1",
-		"eslint-plugin-jsdoc": "^30.7.3",
-		"eslint-plugin-promise": "^4.2.1",
-		"fs-extra": "^9.0.1",
-		"gm": "^1.23.1",
-		"handlebars": "^4.7.6",
-		"lodash": "^4.17.20",
-		"prettier": "^2.1.2",
-		"titanium": ">=5.3.0"
-	}
+  "name": "@titanium/template-turbo-fully-loaded",
+  "version": "1.0.9",
+  "description": "Titanium Native Mobile Template - Turbo (Fully Loaded) -- Titanium Turbo template with all the bells and whistles",
+  "keywords": [
+    "titanium",
+    "mobile",
+    "alloy",
+    "turbo",
+    "appcelerator",
+    "axway",
+    "amplify",
+    "brenton-house",
+    "template"
+  ],
+  "bugs": {
+    "url": "https://github.com/brentonhouse/titanium-template-turbo-fully-loaded/issues",
+    "email": "brenton.house@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brentonhouse/titanium-template-turbo-fully-loaded.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Brenton House",
+    "email": "brenton.house@gmail.com",
+    "url": "https://github.com/brentonhouse"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+    "prep": "npm install --ignore-scripts && npm run list",
+    "prepublish": "bump release --tiapp false",
+    "test": "npm run prep"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@titanium/eslint-config": "0.0.18",
+    "bluebird": "^3.7.2",
+    "eslint": "^7.12.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "fs-extra": "^9.0.1",
+    "lodash": "^4.17.20"
+  },
+  "titaniumDependencies": {
+    "@geek/cache": "^1.0.2",
+    "@geek/jwt": "^1.0.1",
+    "@titanium/plugin-turbo": ">=1.0.6",
+    "@titanium/turbo": "^2.1.6",
+    "@geek/retry": "^1.0.0",
+    "@mobile/tinycolor2": "^1.4.1-2",
+    "@titanium/authentication": "^1.0.1",
+    "@titanium/authentication-oauth": "^1.0.13",
+    "@titanium/bluebird": "^3.7.3",
+    "@titanium/calendar-picker": "1.0.0",
+    "@titanium/deeply": "^1.0.4",
+    "@titanium/facebook": ">=1.0.10",
+    "@titanium/googlesignin": "^0.0.1",
+    "@titanium/identity": ">=1.1.2",
+    "@titanium/lottie": "^1.0.24",
+    "@titanium/observer": "0.0.3",
+    "@titanium/permissions": ">=1.0.2",
+    "@titanium/please": "^1.0.11",
+    "@titanium/screenshot": "^1.0.1",
+    "@titanium/updater": "^1.0.1",
+    "@titanium/webdialog": "^2.1.3",
+    "ansi-colors": "^4.1.1"
+  },
+  "titaniumDevDependencies": {
+    "@titanium/eslint-config": "0.0.18",
+    "bluebird": "^3.7.2",
+    "eslint": "^7.12.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "fs-extra": "^9.0.1",
+    "gm": "^1.23.1",
+    "handlebars": "^4.7.6",
+    "lodash": "^4.17.20",
+    "prettier": "^2.1.2",
+    "titanium": ">=5.3.0"
+  }
 }

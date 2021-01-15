@@ -1,6 +1,6 @@
 {
   "name": "@titanium/template-turbo-fully-loaded",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Titanium Native Mobile Template - Turbo (Fully Loaded) -- Titanium Turbo template with all the bells and whistles",
   "keywords": [
     "titanium",
@@ -32,7 +32,7 @@
     "lint": "eslint . --fix",
     "list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "prep": "npm install --ignore-scripts && npm run list",
-    "prepublish": "bump release --tiapp false",
+    "prepublishOnly": "bump release --tiapp false",
     "test": "npm run prep"
   },
   "dependencies": {},

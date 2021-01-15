@@ -3,6 +3,8 @@
 	// #region ---[ Define Constants ]---
 
 	Alloy.MANUAL_OPEN = true;
+	const IS_DEV = global.IS_DEV = (Ti.App.deployType === `development`);
+	const IS_PROD = ! IS_DEV;
 
 	// #endregion ---[ Define Constants ]---
 
@@ -11,7 +13,7 @@
 	// ---------------------------------------------------------
 	//    Configure Bluebird Promises
 	// ---------------------------------------------------------
-	global.Promise = require('bluebird');
+	global.Promise = require(`bluebird`);
 
 	Promise.config({
 		warnings:        false, // Enable warnings
@@ -28,7 +30,7 @@
 	// ---------------------------------------------------------
 	//    Configure Exception Handlers
 	// ---------------------------------------------------------
-	require('/exceptions');
+	require(`/exceptions`);
 
 	// #endregion ---[ Configure Exception Handlers ]---
 
@@ -38,30 +40,38 @@
 	//    Configure Logging Manager
 	// ---------------------------------------------------------
 
-	const Logger = require('@geek/logger');
+	const Logger = require(`@geek/logger`);
 
 	const consoleStore = new Logger.stores.Console({
 		// default_format: 'timestamp_message_args_color',
-		default_format: 'debug_message_color',
-		extras:         [ 'track' ],
+		default_format: `debug_message_color`,
+		extras:         [ `track` ],
 		level_formats:  {
-			event: 'events_color',
+			event: `events_color`,
 			// track: 'timestamp_message_color',
 			// track: 'timestamp_message_args_color',
-			track: 'debug_message_color',
+			track: `debug_message_color`,
+			error: `debug_message_args_color`,
 		},
 	});
 	const titaniumStore = new Logger.stores.Titanium();
 	const defaultLogger = new Logger({
-		namespace: 'app:default',
+		namespace: `app:default`,
 		stores:    [ consoleStore, titaniumStore ],
-		level:     'debug',
+		level:     turbo.API_VERBOSE_MODE ? `silly` : `info`,
+		meta:      () => {
+			return {
+				device_model_name:   turbo.device_model_name,
+				network_type_name:   turbo.network_type_name,
+				device_manufacturer: turbo.device_manufacturer,
+			};
+		},
 	});
 
 	Logger.defaultLogger = defaultLogger;
 
-	const logger = Logger.createLogger('app:alloy', { meta: { filename: __filename } });
-	logger.track('logger configured.');
+	const logger = Logger.createLogger(`app:alloy`, { meta: { filename: __filename } });
+	logger.track(`logger configured.`);
 
 	// enable all namespaces
 	// Logger.filter('**');
@@ -69,11 +79,18 @@
 	// disable all namespaces
 	// Logger.filter([ '!**' ]);
 
-	Logger.filter([
-		'**',
-		'!@titanium/please',
-		'!@geek/cache',
-	]);
+	// enable all namespaces
+	const filters = [ `**` ];
+
+	if (IS_PROD) {
+		filters.push(`!@titanium/please`);
+		filters.push(`!@titanium/notices`);
+		filters.push(`!@geek/cache`);
+	} else if (!turbo.API_VERBOSE_MODE) {
+		filters.push(`!@titanium/please`);
+	}
+
+	Logger.filter(filters);
 
 	// #endregion ---[ Configure Logging Manager ]---
 
@@ -83,7 +100,7 @@
 	//    Initialize Titanium Essentials
 	// ---------------------------------------------------------
 
-	require('@titanium/essentials');
+	require(`@titanium/essentials`);
 
 	// #endregion ---[ Initialize Titanium Essentials ]---
 
@@ -92,25 +109,11 @@
 	// ---------------------------------------------------------
 	//    Configure Event Tracker
 	// ---------------------------------------------------------
-	turbo.tracker = {
-		event: async (name, data = {}) => {
-			await logger.event(name, data);
-		},
-		app_launch:       async () => turbo.tracker.event('app_start'),
-		app_first_launch: async () => turbo.tracker.event('app_first_launch'),
-		auth_prompt:      async () => turbo.tracker.event('auth_prompt'),
-		auth_success:     async () => turbo.tracker.event('auth_success'),
-		auth_refresh:     async () => turbo.tracker.event('auth_refresh'),
-		auth_signout:     async () => turbo.tracker.event('auth_signout'),
-		app_update_check: async () => turbo.tracker.event('app_update_check'),
-		open_teams:       async () => turbo.tracker.event('open_teams'),
-		app_updated:      async ({ old_app_version, new_app_version } = {}) => turbo.tracker.event('app_updated', { old_app_version, new_app_version }),
-		article_open:     async article_id => turbo.tracker.event('article_open', {	article_id }),
-		screen_view:      async screen_name => turbo.tracker.event('screen_view', { screen_name }),
-	};
+	_.assign(turbo.tracker, { test: async () => turbo.tracker.event(`test`) });
+	turbo.tracker.app_open();
 
 	// #endregion ---[ Configure Event Tracker ]---
 
-	Alloy.open('index');
+	Alloy.open(`index`);
 
 })(this);

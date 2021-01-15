@@ -1,6 +1,6 @@
 {
   "name": "@titanium/template-turbo-fully-loaded",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Titanium Native Mobile Template - Turbo (Fully Loaded) -- Titanium Turbo template with all the bells and whistles",
   "keywords": [
     "titanium",
@@ -39,9 +39,10 @@
   "devDependencies": {
     "@titanium/eslint-config": "0.0.18",
     "bluebird": "^3.7.2",
-    "eslint": "^7.12.1",
+    "eslint": "^7.17.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^30.7.3",
+    "eslint-plugin-jsdoc": "^31.0.5",
+    "eslint-plugin-json": "^2.1.2",
     "eslint-plugin-promise": "^4.2.1",
     "fs-extra": "^9.0.1",
     "lodash": "^4.17.20"
@@ -50,7 +51,7 @@
     "@geek/cache": "^1.0.2",
     "@geek/jwt": "^1.0.1",
     "@titanium/plugin-turbo": ">=1.0.6",
-    "@titanium/turbo": "^2.1.6",
+    "@titanium/turbo": "^2.1.7",
     "@geek/retry": "^1.0.0",
     "@mobile/tinycolor2": "^1.4.1-2",
     "@titanium/authentication": "^1.0.1",
@@ -63,7 +64,7 @@
     "@titanium/identity": ">=1.1.2",
     "@titanium/lottie": "^1.0.24",
     "@titanium/observer": "0.0.3",
-    "@titanium/permissions": ">=1.0.2",
+    "@titanium/permissions": ">=1.0.3",
     "@titanium/please": "^1.0.11",
     "@titanium/screenshot": "^1.0.1",
     "@titanium/updater": "^1.0.1",
@@ -73,15 +74,16 @@
   "titaniumDevDependencies": {
     "@titanium/eslint-config": "0.0.18",
     "bluebird": "^3.7.2",
-    "eslint": "^7.12.1",
+    "eslint": "^7.17.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^30.7.3",
+    "eslint-plugin-jsdoc": "^31.0.5",
     "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-json": "^2.1.2",
     "fs-extra": "^9.0.1",
     "gm": "^1.23.1",
     "handlebars": "^4.7.6",
     "lodash": "^4.17.20",
-    "prettier": "^2.1.2",
+    "prettier": "^2.2.1",
     "titanium": ">=5.3.0"
   }
 }

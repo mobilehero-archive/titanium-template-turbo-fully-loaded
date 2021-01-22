@@ -3,7 +3,7 @@
 	// #region ---[ Define Constants ]---
 
 	Alloy.MANUAL_OPEN = true;
-	const IS_DEV = global.IS_DEV = (Ti.App.deployType === `development`);
+	const IS_DEV = global.IS_DEV = [ `development`, `test` ].includes(Ti.App.deployType);
 	const IS_PROD = ! IS_DEV;
 
 	// #endregion ---[ Define Constants ]---
@@ -45,9 +45,9 @@
 	const consoleStore = new Logger.stores.Console({
 		// default_format: 'timestamp_message_args_color',
 		default_format: `debug_message_color`,
-		extras:         [ `track` ],
+		extras:         IS_DEV ? [ `track`, `http`, `event`, `secret` ] : [ `track`, `event` ],
 		level_formats:  {
-			event: `events_color`,
+			event: `events_color_simple`,
 			// track: 'timestamp_message_color',
 			// track: 'timestamp_message_args_color',
 			track: `debug_message_color`,
@@ -57,7 +57,8 @@
 	const titaniumStore = new Logger.stores.Titanium();
 	const defaultLogger = new Logger({
 		namespace: `app:default`,
-		stores:    [ consoleStore, titaniumStore ],
+		// stores:    [ consoleStore, titaniumStore ],
+		stores:    [ consoleStore ],
 		level:     turbo.API_VERBOSE_MODE ? `silly` : `info`,
 		meta:      () => {
 			return {
@@ -96,13 +97,6 @@
 
 	// #region ---[ Initialize Titanium Essentials ]---
 
-	// ---------------------------------------------------------
-	//    Initialize Titanium Essentials
-	// ---------------------------------------------------------
-
-	require(`@titanium/essentials`);
-
-	// #endregion ---[ Initialize Titanium Essentials ]---
 
 	// #region ---[ Configure Event Tracker ]---
 

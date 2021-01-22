@@ -1,1 +1,7 @@
 node_modules
+build
+Resources
+.internal
+docs
+plugins
+dist

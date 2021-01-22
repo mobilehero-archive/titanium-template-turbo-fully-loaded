@@ -64,7 +64,7 @@
 				<key>UIStatusBarHidden</key>
 				<false />
 				<key>UIStatusBarStyle</key>
-				<string>UIStatusBarStyleDefault</string>				
+				<string>UIStatusBarStyleDefault</string>
 				<key>ITSAppUsesNonExemptEncryption</key>
 				<false />
 				<key>NSAppleMusicUsageDescription</key>
@@ -160,6 +160,8 @@
 				</array>
 				<!-- <key>com.apple.developer.associated-domains</key><array><string>applinks:my-domain-name.com</string></array> -->
 				<!-- <key>keychain-access-groups</key><array><string>$(AppIdentifierPrefix).${id}</string></array>				 -->
+				<!-- <key>aps-environment</key>
+				<string>development</string> -->
 			</dict>
 		</entitlements>
 	</ios>
@@ -196,7 +198,7 @@
 		<target device="ipad">true</target>
 		<target device="iphone">true</target>
 	</deployment-targets>
-	<sdk-version>9.2.1.GA</sdk-version>
+	<sdk-version>9.3.0.GA</sdk-version>
 	<plugins>
 		<plugin version="1.0">ti.alloy</plugin>
 		<plugin version="1.0">turbo</plugin>

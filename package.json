@@ -44,7 +44,7 @@
     "eslint-plugin-jsdoc": "^31.0.8",
     "eslint-plugin-jsonc": "^0.8.2",
     "eslint-plugin-promise": "^4.2.1",
-    "fs-extra": "^9.1.0",
+    "fs-extra": "^10.0.0",
     "lodash": "^4.17.20"
   },
   "titaniumDependencies": {

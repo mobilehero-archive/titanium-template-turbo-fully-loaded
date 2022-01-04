@@ -1,7 +1,7 @@
 {
   "name": "@titanium/template-turbo-fully-loaded",
-  "version": "1.0.13",
-  "description": "Titanium Native Mobile Template - Turbo (Fully Loaded) -- Titanium Turbo template with all the bells and whistles",
+  "version": "1.0.16",
+  "description": "Axway Amplify Template for building new apps with Appcelerator Titanium Alloy Turbo",
   "keywords": [
     "titanium",
     "mobile",
@@ -10,6 +10,8 @@
     "appcelerator",
     "axway",
     "amplify",
+    "axway-amplify",
+    "api-builder",
     "brenton-house",
     "template"
   ],
@@ -32,7 +34,7 @@
     "lint": "eslint . --fix",
     "list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "prep": "npm install --ignore-scripts && npm run list",
-    "prepublishOnly": "bump release --tiapp false",
+    "prepublishOnly2": "bump release --tiapp false",
     "test": "npm run prep"
   },
   "dependencies": {},

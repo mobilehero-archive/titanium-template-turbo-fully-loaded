@@ -39,7 +39,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@titanium/eslint-config": "1.0.1",
+    "@titanium/eslint-config": "1.0.4",
     "bluebird": "^3.7.2",
     "eslint": "^7.18.0",
     "eslint-plugin-import": "^2.22.1",

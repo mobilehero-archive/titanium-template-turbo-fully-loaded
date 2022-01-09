@@ -1,6 +1,6 @@
 {
   "name": "@titanium/template-turbo-fully-loaded",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "⭐  Axway Amplify Template for building new apps with Appcelerator Titanium Alloy Turbo",
   "keywords": [
     "titanium",
@@ -56,12 +56,12 @@
     "@geek/spawn": "^0.0.3",
     "@geek/spinner": "^1.0.0",
     "@geek/tld": "^2.0.1-1",
-    "@titanium/appcelerator": "^6.0.4",
+    "@titanium/appcelerator": "^6.0.5",
     "@titanium/bluebird": "^3.7.10",
     "@titanium/errors": "^1.0.8",
     "@titanium/essentials": "^1.0.38",
     "@titanium/events": "^1.0.20",
-    "@titanium/eventsource": "^1.0.5",
+    "@titanium/eventsource": "^1.0.6",
     "@titanium/jwt": "^1.0.10",
     "@titanium/module-copier": "^1.0.15",
     "@titanium/please": "^1.0.17",
@@ -72,7 +72,7 @@
     "@titanium/turbo": "^2.2.24"
   },
   "devDependencies": {
-    "@titanium/eslint-config": "1.0.9",
+    "@titanium/eslint-config": "1.0.10",
     "bluebird": "^3.7.2",
     "eslint": "^8.6.0",
     "eslint-plugin-import": "^2.25.4",
@@ -107,7 +107,7 @@
     "ansi-colors": "^4.1.1"
   },
   "titaniumDevDependencies": {
-    "@titanium/eslint-config": "1.0.9",
+    "@titanium/eslint-config": "1.0.10",
     "bluebird": "^3.7.2",
     "eslint": "^8.6.0",
     "eslint-plugin-import": "^2.25.4",

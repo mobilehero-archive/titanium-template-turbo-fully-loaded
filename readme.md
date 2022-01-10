@@ -48,7 +48,8 @@ Some Open-Source versions of Axway products will live on after End-of-Life (EOL)
 # Titanium Turbo Template (Fully Loaded)
 
 [![@titanium/template-turbo-fully-loaded](https://img.shields.io/npm/v/@titanium/template-turbo-fully-loaded.png)](https://www.npmjs.com/package/@titanium/template-turbo-fully-loaded)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=brentonhouse/titanium-template-turbo-fully-loaded)](https://dependabot.com)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=mobilehero-archive/titanium-template-turbo-fully-loaded)](https://dependabot.com)
+
 
 > This fully-loaded turbo template is based on the `@titanium/template-turbo-next` template but with all the bells and whistles included.
 

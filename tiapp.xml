@@ -3,7 +3,7 @@
 		  xmlns:ti="http://ti.appcelerator.org">
 	<id>${id}</id>
 	<name>${name}</name>
-	<version>1.0.50</version>
+	<version>1.0.51</version>
 	<publisher>${publisher}</publisher>
 	<url>${url}</url>
 	<description>${description}</description>
@@ -38,9 +38,9 @@
 		<plist>
 			<dict>
 				<key>CFBundleVersion</key>
-				<string>1.0.50</string>
+				<string>1.0.51</string>
 				<key>CFBundleShortVersionString</key>
-				<string>1.0.50</string>
+				<string>1.0.51</string>
 				<key>UISupportedInterfaceOrientations~iphone</key>
 				<array>
 					<string>UIInterfaceOrientationPortrait</string>
@@ -168,7 +168,7 @@
 	<android
 				xmlns:android="http://schemas.android.com/apk/res/android">
 		<manifest
-					 xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="100050000">
+					 xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="100051000">
 			<application android:debuggable="true" android:icon="@drawable/appicon" android:label="${name}" android:largeHeap="true" android:screenOrientation="portrait" android:theme="@style/turbo_theme">
 				<activity android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="${name}" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
 				<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
